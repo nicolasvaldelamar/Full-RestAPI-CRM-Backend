@@ -16,7 +16,6 @@ exports.nuevoCliente = async (req, res, next) => {
 }
 
 //muestra todos los clientes
-
 exports.mostrarClientes = async (req, res, next) => {
     try {
         const clientes = await Clientes.find({});
