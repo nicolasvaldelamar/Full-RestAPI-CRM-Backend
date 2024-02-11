@@ -59,7 +59,7 @@ exports.eliminarCliente = async (req, res, next) => {
         await Clientes.findOneAndDelete({ _id: req.params.idCliente })
         res.json({mensaje: 'El cliente se ha eliminado'});
     } catch (error) {
-        console.log(error);
+        res.send(error);
         next();
     }
 }
