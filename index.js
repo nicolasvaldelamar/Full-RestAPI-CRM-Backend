@@ -23,4 +23,9 @@ app.use(cors())
 //rutas de la app
 app.use('/', routes());
 
+//carpeta publica
+app.use(express.static('uploads'))
+
+
+//escuchando en puerto
 app.listen(5000);
